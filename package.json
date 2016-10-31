@@ -1,0 +1,19 @@
+{
+  "name": "jxon.js",
+  "version": "1.0.0",
+  "description": "Lossless JavaScript XML Object Notation",
+  "main": "jxon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madmurphy/jxon.js.git"
+  },
+  "author": "madmurphy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/madmurphy/jxon.js/issues"
+  },
+  "homepage": "https://developer.mozilla.org/en-US/docs/Archive/JXON"
+}

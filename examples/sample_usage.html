@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>JXON example</title>
+<script type="text/javascript" src="../jxon.js"></script>
+<script type="text/javascript">
+function reqListener () {
+
+	var myObject = JXON.build(this.responseXML);
+	// we got our javascript object!
+	alert(JSON.stringify(myObject));
+
+	var newDoc = JXON.unbuild(myObject);
+	// we got our Document instance!
+	alert((new XMLSerializer()).serializeToString(newDoc));
+
+};
+ 
+var oReq = new XMLHttpRequest();
+oReq.onload = reqListener;
+oReq.open("get", "example.xml", true);
+oReq.send();
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
